@@ -15,7 +15,7 @@ export default class Component extends EventEmitter {
 
 		this.element[this.constructor.name] = this.constructor._interface.bind(this);
 		this.element[this.constructor.name].Constructor = this.constructor.name;
-		this.id = uuid();
+		this.id = uuid('c-');
 
 		this.options = {
 			...defaultOptions,
