@@ -15,7 +15,7 @@ export default class Component extends EventEmitter {
 
 		this.element[this.constructor.name] = this.constructor._interface.bind(this);
 		this.element[this.constructor.name].Constructor = this.constructor.name;
-		this.id = uuid(this.constructor.name + '-');
+		this.id = uuid();
 
 		this.options = {
 			...defaultOptions,
@@ -63,9 +63,9 @@ export default class Component extends EventEmitter {
 
 	/**
 	 * Observe DOM mutations to automatically initialize plugin on new elements when added to the DOM
-	 * 
-	 * @param {string} selector 
-	 * @param {Object} options 
+	 *
+	 * @param {string} selector
+	 * @param {Object} options
 	 */
 	static observeDom(selector, options) {
 		const observer = new MutationObserver(mutations => {
