@@ -9,7 +9,7 @@ $tagsinput-duplicate-animation: blinker .75s linear infinite !default
     display: flex
     flex-wrap: wrap
     height: auto
-    min-height: 2.5em
+    min-height: auto
     padding: 0
     position: relative
 
@@ -27,11 +27,12 @@ $tagsinput-duplicate-animation: blinker .75s linear infinite !default
 
     .input
         border-color: transparent
+        border: 0
         box-shadow: none
         display: inline-block
         flex: 1 0 auto
-        height: 2.3rem
-        margin: .1rem
+        height: initial
+        margin: initial
         width: auto
 
     &.is-filter
@@ -56,7 +57,7 @@ $tagsinput-duplicate-animation: blinker .75s linear infinite !default
             max-height: 250px
             overflow: hidden
             overflow-y: auto
-            
+
             &.is-loading
                 &::after
                     @extend %loader
@@ -132,7 +133,7 @@ $tagsinput-duplicate-animation: blinker .75s linear infinite !default
             border-color: $input-disabled-border-color
             box-shadow: none
             color: $input-disabled-color
-            
+
             +placeholder
                 color: $input-disabled-placeholder-color
 

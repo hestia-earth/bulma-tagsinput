@@ -230,7 +230,7 @@ button.dropdown-item.is-active {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  min-height: 2.5em;
+  min-height: auto;
   padding: 0;
   position: relative;
 }
@@ -261,15 +261,16 @@ button.dropdown-item.is-active {
 /* line 175, src/sass/app.sass */
 .tags-input .input {
   border-color: transparent;
+  border: 0;
   box-shadow: none;
   display: inline-block;
   flex: 1 0 auto;
-  height: 2.3rem;
-  margin: .1rem;
+  height: initial;
+  margin: initial;
   width: auto;
 }
 
-/* line 185, src/sass/app.sass */
+/* line 186, src/sass/app.sass */
 .tags-input.is-filter input {
   color: rgba(54, 54, 54, 0.3);
 }
@@ -294,7 +295,7 @@ button.dropdown-item.is-active {
   color: rgba(54, 54, 54, 0.3);
 }
 
-/* line 191, src/sass/app.sass */
+/* line 192, src/sass/app.sass */
 .tags-input.no-input input {
   color: transparent;
   text-shadow: 0 0 0 rgba(54, 54, 54, 0.3);
@@ -324,19 +325,19 @@ button.dropdown-item.is-active {
   text-shadow: none;
 }
 
-/* line 199, src/sass/app.sass */
+/* line 200, src/sass/app.sass */
 .tags-input .dropdown-menu {
   width: 100%;
 }
 
-/* line 202, src/sass/app.sass */
+/* line 203, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-content {
   max-height: 250px;
   overflow: hidden;
   overflow-y: auto;
 }
 
-/* line 208, src/sass/app.sass */
+/* line 209, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-content.is-loading::after {
   left: 50%;
   position: absolute !important;
@@ -345,7 +346,7 @@ button.dropdown-item.is-active {
   z-index: 4;
 }
 
-/* line 215, src/sass/app.sass */
+/* line 216, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-content.is-loading::before {
   background-color: rgba(245, 245, 245, 0.5);
   content: "";
@@ -357,60 +358,60 @@ button.dropdown-item.is-active {
   z-index: 3;
 }
 
-/* line 227, src/sass/app.sass */
+/* line 228, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-item:not(.empty-title):hover {
   cursor: pointer;
 }
 
-/* line 230, src/sass/app.sass */
+/* line 231, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-item.empty-title {
   color: #7a7a7a;
   text-align: center;
 }
 
-/* line 234, src/sass/app.sass */
+/* line 235, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-item.empty-title:hover {
   background: inherit;
   color: #7a7a7a;
 }
 
-/* line 239, src/sass/app.sass */
+/* line 240, src/sass/app.sass */
 .tags-input .dropdown-menu .dropdown-item mark.is-highlighted {
   background-color: #ffdd57;
 }
 
-/* line 243, src/sass/app.sass */
+/* line 244, src/sass/app.sass */
 .tags-input.is-small .tag {
   font-size: 0.75rem;
 }
 
-/* line 245, src/sass/app.sass */
+/* line 246, src/sass/app.sass */
 .tags-input.is-small .input {
   border-radius: 2px;
   font-size: 0.75rem;
 }
 
-/* line 248, src/sass/app.sass */
+/* line 249, src/sass/app.sass */
 .tags-input.is-medium .tag {
   font-size: 1.25rem;
 }
 
-/* line 250, src/sass/app.sass */
+/* line 251, src/sass/app.sass */
 .tags-input.is-medium .input {
   font-size: 1.25rem;
 }
 
-/* line 253, src/sass/app.sass */
+/* line 254, src/sass/app.sass */
 .tags-input.is-large .tag {
   font-size: 1.5rem;
 }
 
-/* line 255, src/sass/app.sass */
+/* line 256, src/sass/app.sass */
 .tags-input.is-large .input {
   font-size: 1.5rem;
 }
 
-/* line 258, src/sass/app.sass */
+/* line 259, src/sass/app.sass */
 .tags-input.is-disabled, .tags-input[disabled] {
   background-color: whitesmoke;
   border-color: whitesmoke;
@@ -419,14 +420,14 @@ button.dropdown-item.is-active {
   cursor: not-allowed;
 }
 
-/* line 266, src/sass/app.sass */
+/* line 267, src/sass/app.sass */
 .tags-input.is-disabled .tag, .tags-input[disabled] .tag {
   background-color: ligthen(whitesmoke, 5%);
   color: #7a7a7a;
   cursor: not-allowed;
 }
 
-/* line 270, src/sass/app.sass */
+/* line 271, src/sass/app.sass */
 .tags-input.is-disabled .tag .delete, .tags-input[disabled] .tag .delete {
   background-color: #e8e8e8;
   border-color: #e8e8e8;
@@ -435,7 +436,7 @@ button.dropdown-item.is-active {
   cursor: not-allowed;
 }
 
-/* line 277, src/sass/app.sass */
+/* line 278, src/sass/app.sass */
 .tags-input.is-disabled .input, .tags-input[disabled] .input {
   background-color: whitesmoke;
   border-color: whitesmoke;
@@ -463,12 +464,12 @@ button.dropdown-item.is-active {
   color: rgba(122, 122, 122, 0.3);
 }
 
-/* line 287, src/sass/app.sass */
+/* line 288, src/sass/app.sass */
 .tags-input[readonly] .input {
   box-shadow: none;
 }
 
-/* line 291, src/sass/app.sass */
+/* line 292, src/sass/app.sass */
 .tags-input.is-active .dropdown-menu {
   display: block;
 }
