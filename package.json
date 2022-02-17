@@ -1,7 +1,7 @@
 {
   "name": "@hestia-earth/bulma-tagsinput",
   "description": "A full-featured user interface for managing tags with Bulma supporting autocomplete.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "https://github.com/hestia-earth/bulma-tagsinput",
   "author": "Guillaume Royer <guillaumeroyer.mail@gmail.com>",
   "main": "./dist/js/bulma-tagsinput.js",
