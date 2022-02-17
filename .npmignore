@@ -1,2 +1,4 @@
 docs
 src/docs
+gulpfile.js
+*.config.js

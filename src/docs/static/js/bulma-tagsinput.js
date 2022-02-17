@@ -1,4 +1,4 @@
-/*! @creativebulma/bulma-tagsinput v1.0.3 | (c) 2021 Gaetan | MIT License | https://github.com/CreativeBulma/bulma-tagsinput */
+/*! @hestia-earth/bulma-tagsinput v1.0.4 | (c) 2022  | MIT License | https://github.com/hestia-earth/bulma-tagsinput */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -105,15 +105,14 @@ function _interopRequireDefault(obj) {
   };
 }
 
-module.exports = _interopRequireDefault;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _interopRequireDefault=__webpack_require__(0);Object.defineProperty(exports,"__esModule",{value:!0}),exports.escape=exports.cloneAttributes=exports.optionsFromDataset=exports.querySelectorAll=exports.querySelector=void 0;var _toConsumableArray2=_interopRequireDefault(__webpack_require__(19)),_defineProperty2=_interopRequireDefault(__webpack_require__(9)),_type=__webpack_require__(11);function ownKeys(a,b){var c=Object.keys(a);if(Object.getOwnPropertySymbols){var d=Object.getOwnPropertySymbols(a);b&&(d=d.filter(function(b){return Object.getOwnPropertyDescriptor(a,b).enumerable})),c.push.apply(c,d)}return c}function _objectSpread(a){for(var b,c=1;c<arguments.length;c++)b=null==arguments[c]?{}:arguments[c],c%2?ownKeys(Object(b),!0).forEach(function(c){(0,_defineProperty2["default"])(a,c,b[c])}):Object.getOwnPropertyDescriptors?Object.defineProperties(a,Object.getOwnPropertyDescriptors(b)):ownKeys(Object(b)).forEach(function(c){Object.defineProperty(a,c,Object.getOwnPropertyDescriptor(b,c))});return a}/**
+var _interopRequireDefault=__webpack_require__(0);Object.defineProperty(exports,"__esModule",{value:!0}),exports.querySelectorAll=exports.querySelector=exports.optionsFromDataset=exports.escape=exports.cloneAttributes=void 0;var _toConsumableArray2=_interopRequireDefault(__webpack_require__(19)),_defineProperty2=_interopRequireDefault(__webpack_require__(9)),_type=__webpack_require__(11);function ownKeys(a,b){var c=Object.keys(a);if(Object.getOwnPropertySymbols){var d=Object.getOwnPropertySymbols(a);b&&(d=d.filter(function(b){return Object.getOwnPropertyDescriptor(a,b).enumerable})),c.push.apply(c,d)}return c}function _objectSpread(a){for(var b,c=1;c<arguments.length;c++)b=null==arguments[c]?{}:arguments[c],c%2?ownKeys(Object(b),!0).forEach(function(c){(0,_defineProperty2["default"])(a,c,b[c])}):Object.getOwnPropertyDescriptors?Object.defineProperties(a,Object.getOwnPropertyDescriptors(b)):ownKeys(Object(b)).forEach(function(c){Object.defineProperty(a,c,Object.getOwnPropertyDescriptor(b,c))});return a}/**
  * querySelector under steroid
  * Can use as selector:
  *  - function
@@ -151,8 +150,7 @@ function _classCallCheck(instance, Constructor) {
   }
 }
 
-module.exports = _classCallCheck;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 3 */
@@ -171,11 +169,13 @@ function _defineProperties(target, props) {
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
+  Object.defineProperty(Constructor, "prototype", {
+    writable: false
+  });
   return Constructor;
 }
 
-module.exports = _createClass;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _createClass, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 4 */
@@ -189,8 +189,7 @@ function _assertThisInitialized(self) {
   return self;
 }
 
-module.exports = _assertThisInitialized;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _assertThisInitialized, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 5 */
@@ -199,13 +198,11 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 function _getPrototypeOf(o) {
   module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   return _getPrototypeOf(o);
 }
 
-module.exports = _getPrototypeOf;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _getPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 6 */
@@ -225,11 +222,13 @@ function _inherits(subClass, superClass) {
       configurable: true
     }
   });
+  Object.defineProperty(subClass, "prototype", {
+    writable: false
+  });
   if (superClass) setPrototypeOf(subClass, superClass);
 }
 
-module.exports = _inherits;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _inherits, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 7 */
@@ -242,13 +241,14 @@ var assertThisInitialized = __webpack_require__(4);
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return assertThisInitialized(self);
 }
 
-module.exports = _possibleConstructorReturn;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _possibleConstructorReturn, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 8 */
@@ -257,25 +257,14 @@ module.exports["default"] = module.exports, module.exports.__esModule = true;
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  }
-
-  return _typeof(obj);
+  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
 }
 
-module.exports = _typeof;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 9 */
@@ -296,8 +285,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-module.exports = _defineProperty;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 10 */
@@ -313,15 +301,14 @@ function _arrayLikeToArray(arr, len) {
   return arr2;
 }
 
-module.exports = _arrayLikeToArray;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _interopRequireDefault=__webpack_require__(0);Object.defineProperty(exports,"__esModule",{value:!0}),exports.isSelectorValid=exports.BooleanParse=exports.isNode=exports.isPromise=exports.isObject=exports.isString=exports.isFunction=void 0;var _typeof2=_interopRequireDefault(__webpack_require__(8)),isFunction=function isFunction(a){return"function"==typeof a};exports.isFunction=isFunction;var isString=function isString(a){return"string"==typeof a||!!a&&"object"===(0,_typeof2["default"])(a)&&"[object String]"===Object.prototype.toString.call(a)};exports.isString=isString;var isObject=function isObject(a){return("function"==typeof a||"object"===(0,_typeof2["default"])(a)&&!!a)&&!Array.isArray(a)};// Returns true if the value has a "then" function. Adapted from
+var _interopRequireDefault=__webpack_require__(0);Object.defineProperty(exports,"__esModule",{value:!0}),exports.isString=exports.isSelectorValid=exports.isPromise=exports.isObject=exports.isNode=exports.isFunction=exports.BooleanParse=void 0;var _typeof2=_interopRequireDefault(__webpack_require__(8)),isFunction=function isFunction(a){return"function"==typeof a};exports.isFunction=isFunction;var isString=function isString(a){return"string"==typeof a||!!a&&"object"===(0,_typeof2["default"])(a)&&"[object String]"===Object.prototype.toString.call(a)};exports.isString=isString;var isObject=function isObject(a){return("function"==typeof a||"object"===(0,_typeof2["default"])(a)&&!!a)&&!Array.isArray(a)};// Returns true if the value has a "then" function. Adapted from
 // https://github.com/graphql/graphql-js/blob/499a75939f70c4863d44149371d6a99d57ff7c35/src/jsutils/isPromise.js
 exports.isObject=isObject;var isPromise=function isPromise(a){return!!(a&&"function"==typeof a.then)};exports.isPromise=isPromise;var isNode=function isNode(a){try{return Node.prototype.cloneNode.call(a,!1),!0}catch(a){return!1}};/**
  * Convert String (false,False,True,true,no,yes,0,1) to real Boolean
@@ -535,10 +522,9 @@ var e=d.split(this.options.delimiter);return e.forEach(function(a){""!=(a=a.repl
 
 var superPropBase = __webpack_require__(15);
 
-function _get(target, property, receiver) {
+function _get() {
   if (typeof Reflect !== "undefined" && Reflect.get) {
-    module.exports = _get = Reflect.get;
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
+    module.exports = _get = Reflect.get, module.exports.__esModule = true, module.exports["default"] = module.exports;
   } else {
     module.exports = _get = function _get(target, property, receiver) {
       var base = superPropBase(target, property);
@@ -546,20 +532,17 @@ function _get(target, property, receiver) {
       var desc = Object.getOwnPropertyDescriptor(base, property);
 
       if (desc.get) {
-        return desc.get.call(receiver);
+        return desc.get.call(arguments.length < 3 ? target : receiver);
       }
 
       return desc.value;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
+    }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   }
 
-  return _get(target, property, receiver || target);
+  return _get.apply(this, arguments);
 }
 
-module.exports = _get;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _get, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 15 */
@@ -576,8 +559,7 @@ function _superPropBase(object, property) {
   return object;
 }
 
-module.exports = _superPropBase;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _superPropBase, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 16 */
@@ -587,14 +569,11 @@ function _setPrototypeOf(o, p) {
   module.exports = _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
     o.__proto__ = p;
     return o;
-  };
-
-  module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
   return _setPrototypeOf(o, p);
 }
 
-module.exports = _setPrototypeOf;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 17 */
@@ -680,8 +659,7 @@ function _toConsumableArray(arr) {
   return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
 }
 
-module.exports = _toConsumableArray;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 20 */
@@ -693,8 +671,7 @@ function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) return arrayLikeToArray(arr);
 }
 
-module.exports = _arrayWithoutHoles;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 21 */
@@ -704,8 +681,7 @@ function _iterableToArray(iter) {
   if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
-module.exports = _iterableToArray;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 22 */
@@ -722,8 +698,7 @@ function _unsupportedIterableToArray(o, minLen) {
   if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
 }
 
-module.exports = _unsupportedIterableToArray;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 23 */
@@ -733,8 +708,7 @@ function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-module.exports = _nonIterableSpread;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
+module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 /* 24 */
